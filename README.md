@@ -20,7 +20,7 @@
     - Run `pip install -r requirements.txt` to install the necessary libraries.
 
 3. **Script Execution:**
-    - Run the script using the command `python your_script.py`.
+    - Run the script using the command `python translatemate.py`.
     - You will be prompted for the location of the `.pot` and `.po` files.
     - Enter the language code in ISO 639-1 format for the desired translation (e.g., 'es' for Spanish).
 
