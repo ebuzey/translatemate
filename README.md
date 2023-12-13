@@ -1,4 +1,4 @@
-# Take .pot and Make Magic
+# TranslateMate 🧉
 
 **Script to simplify the management of translations in `.po` files by integrating automatic translation services.**
 
