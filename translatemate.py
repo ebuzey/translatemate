@@ -1,16 +1,17 @@
 import polib
-from googletrans import Translator as GoogleTranslator
+from googletrans import Translator
 from progress.bar import ShadyBar
 
 
 def translate_text(text, target_language):
-    translator = GoogleTranslator()
+    translator = Translator()
     try:
         translation = translator.translate(text, dest=target_language)
         return translation.text
     except Exception as e:
         print('Error:', e," - Text:", text)
         return 'NoneType'
+
 def create_new_translations(pot_file, po_file, target_language):
     count_new_translates = 0
 
