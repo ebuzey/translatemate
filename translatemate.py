@@ -1,13 +1,12 @@
 import polib
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 from progress.bar import ShadyBar
 
 
 def translate_text(text, target_language):
-    translator = Translator()
     try:
-        translation = translator.translate(text, dest=target_language)
-        return translation.text
+        translated = GoogleTranslator(source='auto', target=target_language).translate(text)
+        return translated
     except Exception as e:
         print('Error:', e," - Text:", text)
         return 'NoneType'
@@ -50,7 +49,6 @@ def merge_translations(pot_file, es_po_file, target_language):
 
     count_new_translates = create_new_translations(pot_file, po_file, target_language)
     count_deprecated_translates = remove_deprecated_translations(pot_file, po_file)
-    breakpoint()
     po_file.save()
     return count_new_translates, count_deprecated_translates
 
