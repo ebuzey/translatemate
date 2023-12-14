@@ -4,7 +4,7 @@
 
 ## Key Features
 
-- **Automatic Translation Generation:** Utilizing the `googletrans` library, the script automatically translates messages without translation in a `.po` file to a language specified by the user.
+- **Automatic Translation Generation:** Utilizing the `deep-translator` library, the script automatically translates messages without translation in a `.po` file to a language specified by the user.
 
 - **Addition of New Messages (msgid):** Automatically identifies and adds new messages (msgid) found in a `.pot` file to the `.po` file. This ensures that all new text strings are included in the translations.
 
